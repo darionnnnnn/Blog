@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSubstituteWithExpression",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSubstituteWithExpressionTests", "NSubstituteWithExpressionTests\NSubstituteWithExpressionTests.csproj", "{AE219845-DE7B-418D-AA2A-A2C04B2432B9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DesignPattern", "DesignPattern", "{DF43A206-D7F8-4CAF-B35D-BFB55E526BDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creational_01_FactoryMethod", "Creational_01_FactoryMethod\Creational_01_FactoryMethod.csproj", "{96DA3B08-36B9-4363-B0AF-6541D53EC963}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,9 +31,16 @@ Global
 		{AE219845-DE7B-418D-AA2A-A2C04B2432B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE219845-DE7B-418D-AA2A-A2C04B2432B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE219845-DE7B-418D-AA2A-A2C04B2432B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96DA3B08-36B9-4363-B0AF-6541D53EC963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96DA3B08-36B9-4363-B0AF-6541D53EC963}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96DA3B08-36B9-4363-B0AF-6541D53EC963}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96DA3B08-36B9-4363-B0AF-6541D53EC963}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{96DA3B08-36B9-4363-B0AF-6541D53EC963} = {DF43A206-D7F8-4CAF-B35D-BFB55E526BDF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {192703CC-5F5A-47FA-B532-2D6FCFF03FF2}
