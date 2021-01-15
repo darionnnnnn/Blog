@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creational_05_Singleton", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creational_06_Adapter", "Creational_06_Adapter\Creational_06_Adapter.csproj", "{ED51BA5A-B576-4322-9187-BD9A8DEEF172}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creational_07_Bridge", "Creational_07_Bridge\Creational_07_Bridge.csproj", "{6437FADB-62E6-4DCC-859E-C502ADD6D901}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +67,10 @@ Global
 		{ED51BA5A-B576-4322-9187-BD9A8DEEF172}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED51BA5A-B576-4322-9187-BD9A8DEEF172}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED51BA5A-B576-4322-9187-BD9A8DEEF172}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6437FADB-62E6-4DCC-859E-C502ADD6D901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6437FADB-62E6-4DCC-859E-C502ADD6D901}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6437FADB-62E6-4DCC-859E-C502ADD6D901}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6437FADB-62E6-4DCC-859E-C502ADD6D901}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,6 +82,7 @@ Global
 		{037AF1A9-4174-4849-9B61-D02ADE299BA2} = {DF43A206-D7F8-4CAF-B35D-BFB55E526BDF}
 		{04C0D6FF-C1D2-44FB-8405-DB58CEA423BE} = {DF43A206-D7F8-4CAF-B35D-BFB55E526BDF}
 		{ED51BA5A-B576-4322-9187-BD9A8DEEF172} = {DF43A206-D7F8-4CAF-B35D-BFB55E526BDF}
+		{6437FADB-62E6-4DCC-859E-C502ADD6D901} = {DF43A206-D7F8-4CAF-B35D-BFB55E526BDF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {192703CC-5F5A-47FA-B532-2D6FCFF03FF2}
