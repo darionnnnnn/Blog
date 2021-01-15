@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Creational_06_Adapter
+namespace Structural_01_Adapter
 {
     class Program
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Text.Json;
 
-namespace Creational_06_Adapter
+namespace Structural_01_Adapter
 {
     public class Situation
     {

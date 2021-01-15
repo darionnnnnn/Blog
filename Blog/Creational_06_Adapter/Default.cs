@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Creational_06_Adapter
+namespace Structural_01_Adapter
 {
     public class Default
     {

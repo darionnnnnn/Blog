@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Creational_07_Bridge
+namespace Structural_02_Bridge
 {
     public class Default
     {

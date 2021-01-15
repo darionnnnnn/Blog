@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Creational_07_Bridge
+namespace Structural_02_Bridge
 {
     class Program
     {

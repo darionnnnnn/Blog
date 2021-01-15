@@ -15,15 +15,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Creational_01_FactoryMethod
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Creational_02_AbstractFactory", "Creational_02_Abstract Factory\Creational_02_AbstractFactory.csproj", "{6D906113-9C2F-4407-BC26-3610C1633542}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creational_03_Builder", "Creational_03_Builder\Creational_03_Builder.csproj", "{8FEDE6D6-6F06-48F5-887F-9322F370AD66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Creational_03_Builder", "Creational_03_Builder\Creational_03_Builder.csproj", "{8FEDE6D6-6F06-48F5-887F-9322F370AD66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creational_04_Prototype", "Creational_04_Prototype\Creational_04_Prototype.csproj", "{037AF1A9-4174-4849-9B61-D02ADE299BA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Creational_04_Prototype", "Creational_04_Prototype\Creational_04_Prototype.csproj", "{037AF1A9-4174-4849-9B61-D02ADE299BA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creational_05_Singleton", "Creational_05_Singleton\Creational_05_Singleton.csproj", "{04C0D6FF-C1D2-44FB-8405-DB58CEA423BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Creational_05_Singleton", "Creational_05_Singleton\Creational_05_Singleton.csproj", "{04C0D6FF-C1D2-44FB-8405-DB58CEA423BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creational_06_Adapter", "Creational_06_Adapter\Creational_06_Adapter.csproj", "{ED51BA5A-B576-4322-9187-BD9A8DEEF172}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structural _01_Adapter", "Creational_06_Adapter\Structural _01_Adapter.csproj", "{ED51BA5A-B576-4322-9187-BD9A8DEEF172}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creational_07_Bridge", "Creational_07_Bridge\Creational_07_Bridge.csproj", "{6437FADB-62E6-4DCC-859E-C502ADD6D901}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structural _02_Bridge", "Creational_07_Bridge\Structural _02_Bridge.csproj", "{6437FADB-62E6-4DCC-859E-C502ADD6D901}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
