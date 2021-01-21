@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Creational_02_Abstract_Factory
+namespace Creational_02_AbstractFactory
 {
     public class Situation
     {

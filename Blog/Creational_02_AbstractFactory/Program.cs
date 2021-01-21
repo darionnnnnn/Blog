@@ -1,5 +1,5 @@
 ﻿using System;
-using Creational_02_Abstract_Factory;
+using Creational_02_AbstractFactory;
 
 namespace Creational_02_AbstractFactory
 {
