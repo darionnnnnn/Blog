@@ -11,8 +11,6 @@ namespace Structural_02_Bridge
         /// </summary>
         public interface IStore
         {
-            IPayment Payment { get; }
-
             void Pay(int amount);
         }
 
@@ -29,17 +27,17 @@ namespace Structural_02_Bridge
         /// </summary>
         public class Store : IStore
         {
-            public IPayment Payment { get; }
+            private IPayment _Payment { get; }
 
             public Store(IPayment payment)
             {
-                Payment = payment;
+                _Payment = payment;
             }
 
             public void Pay(int amount)
             {
                 Console.WriteLine($"在實體門市");
-                Payment.Pay(amount);
+                _Payment.Pay(amount);
             }
         }
 
@@ -48,18 +46,18 @@ namespace Structural_02_Bridge
         /// </summary>
         public class OnlineStore : IStore
         {
-            public IPayment Payment { get; }
+            private IPayment _Payment { get; }
 
             public OnlineStore(IPayment payment)
             {
-                Payment = payment;
+                _Payment = payment;
             }
 
             public void Pay(int amount)
             {
                 Console.WriteLine($"在線上商城");
 
-                Payment.Pay(amount);
+                _Payment.Pay(amount);
             }
         }
 
