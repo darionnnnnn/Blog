@@ -54,21 +54,9 @@ namespace Behavioral_02_Command
                 _command = command;
             }
 
-            public void RemoveCommand()
-            {
-                _command = null;
-            }
-
             public void ExecuteCommand()
             {
-                if (_command is null)
-                {
-                    Console.WriteLine($"Please set command first.");
-                }
-                else
-                {
-                    _command.Execute();
-                }
+                _command.Execute();
             }
         }
     }

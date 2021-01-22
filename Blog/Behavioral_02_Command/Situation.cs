@@ -78,21 +78,9 @@ namespace Behavioral_02_Command
                 _Order = order;
             }
 
-            public void RemoveOrder()
-            {
-                _Order = null;
-            }
-
             public void ExecuteCommand()
             {
-                if (_Order is null)
-                {
-                    Console.WriteLine($"Please order first.");
-                }
-                else
-                {
-                    _Order.Execute();
-                }
+                _Order.Execute();
             }
         }
     }
