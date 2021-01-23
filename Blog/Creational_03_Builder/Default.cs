@@ -11,7 +11,7 @@ namespace Creational_03_Builder
         /// </summary>
         public class Director
         {
-            public void Construct(Builder builder)
+            public void Construct(IBuilder builder)
             {
                 builder.BuildPartA();
                 builder.BuildPartB();
@@ -19,56 +19,56 @@ namespace Creational_03_Builder
         }
 
         /// <summary>
-        /// 建造者方法的父類別或介面
+        /// 建造者方法的介面
         /// </summary>
-        public abstract class Builder
+        public interface IBuilder
         {
-            public abstract void BuildPartA();
-            public abstract void BuildPartB();
-            public abstract Product GetResult();
+            void BuildPartA();
+            void BuildPartB();
+            Product GetResult();
         }
 
         /// <summary>
-        /// 建造者方法的實作1
+        /// 建造者方法的實作 1
         /// </summary>
-        public class ConcreteBuilder1 : Builder
+        public class ConcreteBuilder1 : IBuilder
         {
             private Product _product = new Product();
 
-            public override void BuildPartA()
+            public void BuildPartA()
             {
                 _product.Add("PartA1");
             }
 
-            public override void BuildPartB()
+            public void BuildPartB()
             {
                 _product.Add("PartB1");
             }
 
-            public override Product GetResult()
+            public Product GetResult()
             {
                 return _product;
             }
         }
 
         /// <summary>
-        /// 建造者方法的實作2
+        /// 建造者方法的實作 2
         /// </summary>
-        public class ConcreteBuilder2 : Builder
+        public class ConcreteBuilder2 : IBuilder
         {
             private Product _product = new Product();
 
-            public override void BuildPartA()
+            public void BuildPartA()
             {
                 _product.Add("PartA2");
             }
 
-            public override void BuildPartB()
+            public void BuildPartB()
             {
                 _product.Add("PartB2");
             }
 
-            public override Product GetResult()
+            public Product GetResult()
             {
                 return _product;
             }
