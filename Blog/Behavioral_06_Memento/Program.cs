@@ -9,7 +9,10 @@ namespace Behavioral_06_Memento
             #region Default
 
             // Default.Originator originator = new Default.Originator { State = "On" };
-            // Default.Caretaker caretaker = new Default.Caretaker { Memento = originator.CreateMemento() };
+            // Default.Caretaker caretaker = new Default.Caretaker
+            // {
+            //     Memento = originator.CreateMemento()
+            // };
             //
             // originator.State = "Off";
             //
@@ -20,7 +23,10 @@ namespace Behavioral_06_Memento
             #region Situation
 
             Situation.ScanTheBarcode scanTheBarcode = new Situation.ScanTheBarcode();
-            Situation.Caretaker caretaker = new Situation.Caretaker { Memento = scanTheBarcode.CreateMemento() };
+            Situation.Caretaker caretaker = new Situation.Caretaker
+            {
+                Memento = scanTheBarcode.CreateMemento()
+            };
 
             scanTheBarcode.AddProducts(caretaker.Memento, "麵包");
             scanTheBarcode.AddProducts(caretaker.Memento, "蘋果");
