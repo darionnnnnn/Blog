@@ -50,7 +50,6 @@ namespace Behavioral_08_State
                     breadStore.State = new BreadAndCoffee();
                     breadStore.Request(time);
                 }
-                
             }
         }
 

@@ -19,7 +19,7 @@ namespace Behavioral_08_State
 
             #region Situation
 
-            Situation.BreadStore breadStore = new Situation.BreadStore(new Situation.FreshBread());
+            Situation.BreadStore breadStore = new Situation.BreadStore(new Situation.Close());
 
             breadStore.Request(9);
             breadStore.Request(10);
