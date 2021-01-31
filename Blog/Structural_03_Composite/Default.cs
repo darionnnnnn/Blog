@@ -54,7 +54,7 @@ namespace Structural_03_Composite
         }
 
         /// <summary>
-        /// 實體對象實作
+        /// 實體物件實作
         /// </summary>
         public class Leaf : IComponent
         {

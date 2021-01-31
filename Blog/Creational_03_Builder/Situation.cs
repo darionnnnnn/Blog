@@ -96,7 +96,7 @@ namespace Creational_03_Builder
         }
 
         /// <summary>
-        /// 正在構造的複雜對象
+        /// 正在構造的複雜物件
         /// </summary>
         public class Product
         {

@@ -31,7 +31,7 @@ namespace Structural_01_Adapter
         }
 
         /// <summary>
-        /// 實作端的接口
+        /// 被呼叫端的接口
         /// </summary>
         public class InStockService
         {

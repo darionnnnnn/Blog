@@ -7,21 +7,21 @@ namespace Creational_01_FactoryMethod
     public class Default
     {
         /// <summary>
-        /// 原有邏輯的介面
+        /// 處理邏輯的介面
         /// </summary>
         public interface IProduct
         {
         }
 
         /// <summary>
-        /// 原有邏輯的實作 A
+        /// 處理邏輯的實作 A
         /// </summary>
         public class ConcreteProductA : IProduct
         {
         }
 
         /// <summary>
-        /// 原有邏輯的實作 B
+        /// 處理邏輯的實作 B
         /// </summary>
         public class ConcreteProductB : IProduct
         {

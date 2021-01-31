@@ -47,14 +47,14 @@ namespace Creational_02_AbstractFactory
         }
 
         /// <summary>
-        /// 原有邏輯的介面 A
+        /// 處理邏輯的介面 A
         /// </summary>
         public interface IProductA
         {
         }
 
         /// <summary>
-        /// 原有邏輯的介面 B
+        /// 處理邏輯的介面 B
         /// </summary>
         public interface IProductB
         {
@@ -63,14 +63,14 @@ namespace Creational_02_AbstractFactory
 
 
         /// <summary>
-        /// 原有邏輯的介面 A 實作 A1
+        /// 處理邏輯的介面 A 實作 A1
         /// </summary>
         public class ProductA1 : IProductA
         {
         }
 
         /// <summary>
-        /// 原有邏輯的介面 B 實作 B1
+        /// 處理邏輯的介面 B 實作 B1
         /// </summary>
         class ProductB1 : IProductB
         {
@@ -81,14 +81,14 @@ namespace Creational_02_AbstractFactory
         }
 
         /// <summary>
-        /// 原有邏輯的介面 A 實作 A2
+        /// 處理邏輯的介面 A 實作 A2
         /// </summary>
         public class ProductA2 : IProductA
         {
         }
 
         /// <summary>
-        /// 原有邏輯的介面 B 實作 B2
+        /// 處理邏輯的介面 B 實作 B2
         /// </summary>
         class ProductB2 : IProductB
         {
@@ -99,7 +99,7 @@ namespace Creational_02_AbstractFactory
         }
 
         /// <summary>
-        /// 使用 AbstractFactory & AbstractProductA/B 的介面
+        /// 呼叫端，透過 factory 取得 Product 實作，並處理 Product 間依賴邏輯
         /// </summary>
         public class Client
         {

@@ -116,7 +116,6 @@ namespace Creational_02_AbstractFactory
             private IPayment _payment;
             private IDiscount _discount;
 
-            // Constructor
             public Client(IFactory factory)
             {
                 _discount = factory.CreateDiscount();
