@@ -55,6 +55,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Behavioral_09_Strategy", "B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Behavioral_10_TemplateMethod", "Behavioral_10_TemplateMethod\Behavioral_10_TemplateMethod.csproj", "{DC1FD335-7227-4C9F-8151-D09DF1264915}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Behavioral_11_Visitor", "Behavioral_11_Visitor\Behavioral_11_Visitor.csproj", "{5A839EB7-83D6-413F-A2A4-78F7DD180AB3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -161,6 +163,10 @@ Global
 		{DC1FD335-7227-4C9F-8151-D09DF1264915}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC1FD335-7227-4C9F-8151-D09DF1264915}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC1FD335-7227-4C9F-8151-D09DF1264915}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A839EB7-83D6-413F-A2A4-78F7DD180AB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A839EB7-83D6-413F-A2A4-78F7DD180AB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A839EB7-83D6-413F-A2A4-78F7DD180AB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A839EB7-83D6-413F-A2A4-78F7DD180AB3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -188,6 +194,7 @@ Global
 		{89136425-8238-412B-9E30-673CBD71745F} = {DF43A206-D7F8-4CAF-B35D-BFB55E526BDF}
 		{40FF755B-7048-4B1C-B133-C68FE3EA3721} = {DF43A206-D7F8-4CAF-B35D-BFB55E526BDF}
 		{DC1FD335-7227-4C9F-8151-D09DF1264915} = {DF43A206-D7F8-4CAF-B35D-BFB55E526BDF}
+		{5A839EB7-83D6-413F-A2A4-78F7DD180AB3} = {DF43A206-D7F8-4CAF-B35D-BFB55E526BDF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {192703CC-5F5A-47FA-B532-2D6FCFF03FF2}
