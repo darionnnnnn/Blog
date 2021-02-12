@@ -7,7 +7,7 @@ namespace Structural_02_Bridge
     public class Default
     {
         /// <summary>
-        /// 包含`Implementor`的抽象介面，在此使用 interface
+        /// 包含 Implementor 的抽象介面，在此使用 interface
         /// </summary>
         public interface IAbstraction
         {

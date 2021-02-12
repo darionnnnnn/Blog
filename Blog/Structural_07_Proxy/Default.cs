@@ -15,7 +15,7 @@ namespace Structural_07_Proxy
         }
 
         /// <summary>
-        /// 被代理之服務實作
+        /// 被代理之服務
         /// </summary>
         public class RealSubject : ISubject
         {

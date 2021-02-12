@@ -13,38 +13,30 @@ namespace NSubstituteWithExpressionTests
         [Fact]
         public void GetUsers_取得兩筆UserData_回傳兩筆UserData()
         {
-            try
-            {
-                //Arrange
-                var userRepo = Substitute.For<IRepository<User>>();
-                var userData = new List<User>
-                               {
-                                   new User { Id = 1, Name = "User01" },
-                                   new User { Id = 2, Name = "User02" }
-                               };
-                // 不包含搜尋條件，filter = null，直接將 userData 轉 IQueryable 回傳
-                userRepo.Query(Arg.Any<Expression<Func<User, bool>>>())
-                        .Returns(userData.AsQueryable());
-                var getData = new GetDataService(userRepo);
+            // Arrange
+            var userRepo = Substitute.For<IRepository<User>>();
+            var userData = new List<User>
+                            {
+                                new User { Id = 1, Name = "User01" },
+                                new User { Id = 2, Name = "User02" }
+                            };
+            // 不包含搜尋條件，filter = null，直接將 userData 轉 IQueryable 回傳
+            userRepo.Query(Arg.Any<Expression<Func<User, bool>>>())
+                    .Returns(userData.AsQueryable());
+            var getData = new GetDataService(userRepo);
 
-                //act
-                var result = getData.GetUsers();
+            // Act
+            var result = getData.GetUsers();
 
-                //assert
-                Assert.Equal(result.Any(x => x.Id == 1 && x.Name == "User01"), true);
-                Assert.Equal(result.Any(x => x.Id == 2 && x.Name == "User02"), true);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-                throw;
-            }
+            // Assert
+            Assert.Equal(result.Any(x => x.Id == 1 && x.Name == "User01"), true);
+            Assert.Equal(result.Any(x => x.Id == 2 && x.Name == "User02"), true);
         }
 
         [Fact]
         public void GetUser_輸入Id_回傳UserData()
         {
-            //Arrange
+            // Arrange
             var userRepo = Substitute.For<IRepository<User>>();
             var userData = new List<User>
                            {
@@ -56,10 +48,10 @@ namespace NSubstituteWithExpressionTests
                     .Returns(arg => userData.Where(arg.ArgAt<Expression<Func<User, bool>>>(0).Compile()).AsQueryable());
             var getData = new GetDataService(userRepo);
 
-            //act
+            // Act
             var result = getData.GetUsersById(1);
 
-            //assert
+            // Assert
             Assert.Equal(result.Id == 1 && result.Name == "User01", true);
         }
     }
