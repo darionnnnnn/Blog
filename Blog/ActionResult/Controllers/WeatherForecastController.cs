@@ -60,28 +60,29 @@ namespace ActionResult.Controllers
         //     return Ok(Summaries);
         // }
 
-        // /// <summary>
-        // /// IActionResult
-        // /// 透過 Attribute ProducesResponseType 定義 Http Status Code & 回傳型別
-        // /// </summary>
-        // [HttpGet("{id}")]
-        // [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(string[]))]
-        // public IActionResult Get(int id)
-        // {
-        //     return Ok(Summaries);
-        // }
-
         /// <summary>
-        /// ActionResult<T>
-        /// 透過 Attribute ProducesResponseType 定義 Http Status Code
-        /// 回傳型別可由 ActionResult<T> 取得
-        /// return 可簡寫成 return Summaries;
+        /// IActionResult
+        /// 透過 Attribute ProducesResponseType 定義 Http Status Code & 回傳型別
         /// </summary>
         [HttpGet("{id}")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        public ActionResult<string[]> Get(int id)
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(string[]))]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
+        public IActionResult Get(int id)
         {
-            return Summaries;
+            return Ok(Summaries);
         }
+
+        // /// <summary>
+        // /// ActionResult<T>
+        // /// 透過 Attribute ProducesResponseType 定義 Http Status Code
+        // /// 回傳型別可由 ActionResult<T> 取得
+        // /// return 可簡寫成 return Summaries;
+        // /// </summary>
+        // [HttpGet("{id}")]
+        // [ProducesResponseType(StatusCodes.Status200OK)]
+        // public ActionResult<string[]> Get(int id)
+        // {
+        //     return Summaries;
+        // }
     }
 }
